@@ -16,8 +16,8 @@ app.post('/',(req,res)=>{
     const transporter = nodemailer.createTransport({
         service : 'gmail',
         auth :{
-            user :'stanslousmusekiwa@gmail.com',
-            pass:'brre befm itwj humz'
+            user :'physicalsciencereignited@gmail.com',
+            pass:'vyhw reag kokl xzhk'
 
 
 
@@ -25,12 +25,12 @@ app.post('/',(req,res)=>{
     })
     const mailOptions={
         from: req.body.email,
-        to:'stanslousmusekiwa@gmail.com',
+        to:'physicalsciencereignited@gmail.com',
         subject:`Message from ${req.body.email}`,
         text:`Your have a new applicant :  ${req.body.firstname} \n  Phone Number : ${req.body.phone}. \n email : ${req.body.email} 
        \n Grade: ${req.body.grade} 
        \n Learning Type: ${req.body.learningtype}
-       \n Scheduled date: ${req.body.date}
+    
        `,
        
 
